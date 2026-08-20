@@ -27,3 +27,16 @@ CREATING A COMPONENT[react-crash-course]
 \*Inside of your function, return some JSX
 (function Todo {return <div>Finish Frontend Simplified</div>})
 \*Export your function (export default Todo)
+
+USING A COMPONENT[react-crash-course]
+*Import The File (import Todo from "./components/Todo.jsx")
+*Use The Component (<Todo></Todo>)
+
+//PROPS//
+
+WHAT ARE PROPS?
+\*Props make components dynamic
+
+TWO PARTS
+*Creating props
+*Using props
