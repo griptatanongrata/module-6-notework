@@ -69,7 +69,7 @@ WHAT ARE EVENT HANDLERS
 
 MULTIPLE TYPES
 *useState: How we define variables in React
-*useEffect
+*useEffect: does something as soon as a component mounts
 
 CONDITIONAL RENDERING
 \*rendering a component when a certain condition is met
@@ -78,13 +78,33 @@ CONDITIONAL RENDERING
 *if you are creating a counter, use a value called "prev[first array variable]" to callback an original value
 
 SETTING VALUES IN REACT HOOKS
+*check SCREEN SHOTS for more info
 *Numbers: setNum(number)
 *Booleans: setBool(true or false)
 \*Strings: setStr("Hello World")
 *to change the value, make a callback using the prev... item
-*Examples:
+\*Examples:
 -setNum(10) setNum(prevNum => prevNum + 10)
 -setBool(true) setBool(prevBool => !prevBool)
 -setStr("Frontend") setStr(prevStr => prevStr + "Simplified")
 -setObj(prevObj => ({...prevObj, quantity: prevObj.quantity + 1}))
 -setArr(prevArr => ([...prevArr, 5]))
+
+PASSING EMISSION
+\*Parent scripts are where all the components are imported and utilized (App.jsx) and each component (<Todo />) is utilized as the child page (Todo.jsx)
+\*Check SCREEN SHOTS for more info
+\*To utilize a function from a child page properly, it is best practice to create the function within the parent function, then parse it into the child function as well as applying the parent function into the html elements of the child function (refer to react-crash-course cancelModal/confirmModal exercise)
+
+USE EFFECTS
+\*a function utilizes a callback and a dependency list
+
+//ROUTING//
+
+WHAT IS IT
+\*allows navigation around a website via React
+\*to fetch multiple items (like usernames for multiple people) you utilize the { useParams } with a const {username} to create a variable around specified paramaters with that username (for more info, refer to SCREEN SHOTS)
+
+//API INTEGRATION//
+
+HOW TO RETRIEVE
+\*use fetch or axios
