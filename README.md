@@ -64,3 +64,27 @@ WHAT ARE EVENT HANDLERS
 *Examples (onclick on clickable fields, onchange in input[typed] fields)
 *When utilizing a new function that is defined by a string with the same name, do not use parentheses because it does not have anything else that needs to be parsed (function deleteTodo() needs console.log('deleteTodo') to work with onClick = {deleteTodo})
 *IF it needs a parentheses due to an extra parse in the function, then use a parentheses, but also add the extra following features (function deleteTodo(id [parsed]) needs console.log('deleteTodo', id) to work with onClick={() => deleteTodo([idvalue])})
+
+//REACT HOOKS//
+
+MULTIPLE TYPES
+*useState: How we define variables in React
+*useEffect
+
+CONDITIONAL RENDERING
+\*rendering a component when a certain condition is met
+\*if you want to conditionally render a component with a value, all you have to do is ues a tertiary operator (example: let isModalOpen = false works with {isModalOpen ? <Modal title="Are you sure you want to delete" /> : null[or <></>]})(NOTE: isM... && <... /> with no null variable also works)
+*using double !! converts any value into boolean
+*if you are creating a counter, use a value called "prev[first array variable]" to callback an original value
+
+SETTING VALUES IN REACT HOOKS
+*Numbers: setNum(number)
+*Booleans: setBool(true or false)
+\*Strings: setStr("Hello World")
+*to change the value, make a callback using the prev... item
+*Examples:
+-setNum(10) setNum(prevNum => prevNum + 10)
+-setBool(true) setBool(prevBool => !prevBool)
+-setStr("Frontend") setStr(prevStr => prevStr + "Simplified")
+-setObj(prevObj => ({...prevObj, quantity: prevObj.quantity + 1}))
+-setArr(prevArr => ([...prevArr, 5]))
